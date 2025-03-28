@@ -21,7 +21,7 @@ const Hero = () => {
           className="text-2xl md:text-3xl text-white/80 mb-6 animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          Full Stack Developer | ML Enthusiast | Cloud Practitioner
+          Full Stack Developer | Software Engineer | Data Engineer
         </h2>
         <p
           className="text-lg max-w-2xl mx-auto text-white/70 mb-8 animate-fade-in"
