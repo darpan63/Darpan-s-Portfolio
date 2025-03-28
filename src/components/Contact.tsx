@@ -1,7 +1,22 @@
 
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Form submission logic would go here
+    
+    // Show success toast
+    toast({
+      title: "Message Sent",
+      description: "Thanks for reaching out! I'll get back to you soon.",
+    });
+  };
+  
   return (
     <section id="contact" className="bg-portfolio-dark py-20">
       <div className="section-container">
@@ -20,7 +35,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Location</h3>
-                  <p className="text-white/70">San Francisco, CA</p>
+                  <p className="text-white/70">Bloomington, IN</p>
                 </div>
               </div>
               
@@ -30,7 +45,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
-                  <a href="mailto:hello@example.com" className="text-portfolio-accent hover:underline">hello@example.com</a>
+                  <a href="mailto:darpansakhala11@gmail.com" className="text-portfolio-accent hover:underline">darpansakhala11@gmail.com</a>
                 </div>
               </div>
               
@@ -40,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Phone</h3>
-                  <a href="tel:+1234567890" className="text-portfolio-accent hover:underline">+1 (234) 567-890</a>
+                  <a href="tel:+19303332490" className="text-portfolio-accent hover:underline">+1 (930) 333-2490</a>
                 </div>
               </div>
             </div>
@@ -62,7 +77,7 @@ const Contact = () => {
           </div>
           
           <div>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-white mb-2">Name</label>
                 <input 
@@ -70,6 +85,7 @@ const Contact = () => {
                   id="name" 
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
                   placeholder="Your Name"
+                  required
                 />
               </div>
               
@@ -80,6 +96,7 @@ const Contact = () => {
                   id="email" 
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
                   placeholder="Your Email"
+                  required
                 />
               </div>
               
@@ -90,6 +107,7 @@ const Contact = () => {
                   rows={5}
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
                   placeholder="Your Message"
+                  required
                 ></textarea>
               </div>
               
