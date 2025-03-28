@@ -5,37 +5,37 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Website",
-      description: "A fully responsive e-commerce platform with user authentication, product filtering, and payment integration.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      skills: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Harmonify",
+      description: "A music-centric social platform with real-time track sharing that improved engagement by 40% and enhanced performance by 30% through optimized React components and backend APIs.",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+      skills: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      description: "A sleek portfolio website showcasing creative work with smooth animations and responsive design.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
-      skills: ["HTML/CSS", "JavaScript", "GSAP"],
+      title: "Epileptic Seizure Detection",
+      description: "Implemented a CNN-driven method for epileptic seizure identification achieving over 90% accuracy, enhanced by LSTM layers and thorough data visualization for critical clinical insights.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      skills: ["Python", "CNN", "TensorFlow", "Keras", "LSTM", "Matplotlib"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-      skills: ["React", "Firebase", "Redux", "Tailwind CSS"],
+      title: "NYC School Bus Delays Analysis",
+      description: "Engineered an ETL pipeline for 600K+ NYC school bus delay records using Python and Airflow, storing raw data in AWS S3, transforming it in PostgreSQL, and delivering insights via Power BI dashboards.",
+      image: "https://images.unsplash.com/photo-1580508174046-170816f65662?auto=format&fit=crop&w=800&q=80",
+      skills: ["SQL", "Python", "Airflow", "AWS S3", "PostgreSQL", "Power BI"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 4,
-      title: "Weather Dashboard",
-      description: "A weather application providing real-time forecasts, historical data, and location-based weather alerts.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-      skills: ["JavaScript", "Weather API", "Chart.js"],
+      title: "E-Commerce Platform",
+      description: "Deployed a fully featured e-commerce platform for the Australian market using React, Node.js, and MySQL, boosting revenue by 15% and expanding the client's market presence.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+      skills: ["React", "Node.js", "MySQL", "OAuth", "RESTful APIs"],
       liveUrl: "#",
       githubUrl: "#"
     }

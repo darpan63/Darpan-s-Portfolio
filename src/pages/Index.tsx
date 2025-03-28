@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const Index = () => {
   // Update the page title
   useEffect(() => {
-    document.title = "My Portfolio";
+    document.title = "Darpan Sakhala | Portfolio";
   }, []);
 
   return (
