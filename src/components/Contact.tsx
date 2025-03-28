@@ -63,14 +63,14 @@ const Contact = () => {
             <div className="mt-10">
               <h3 className="text-lg font-medium text-white mb-4">Connect With Me</h3>
               <div className="flex space-x-4">
-                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                <a href="https://github.com/darpan63" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
                   <Github className="text-white" size={20} />
                 </a>
-                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/darpansakhala9/" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
                   <Linkedin className="text-white" size={20} />
                 </a>
-                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
-                  <Twitter className="text-white" size={20} />
+                <a href="https://leetcode.com/u/darpan63/" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                  <LeetCode className="text-white" size={20} />
                 </a>
               </div>
             </div>
