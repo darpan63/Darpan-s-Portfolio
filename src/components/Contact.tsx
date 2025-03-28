@@ -1,0 +1,110 @@
+
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+
+const Contact = () => {
+  return (
+    <section id="contact" className="bg-portfolio-dark py-20">
+      <div className="section-container">
+        <h2 className="section-title">Get In Touch</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div>
+            <p className="text-lg text-white/80 mb-8">
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Feel free to contact me using your preferred method.
+            </p>
+            
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="bg-portfolio-primary/20 p-3 rounded-full">
+                  <MapPin className="text-portfolio-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-white">Location</h3>
+                  <p className="text-white/70">San Francisco, CA</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-portfolio-primary/20 p-3 rounded-full">
+                  <Mail className="text-portfolio-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-white">Email</h3>
+                  <a href="mailto:hello@example.com" className="text-portfolio-accent hover:underline">hello@example.com</a>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-portfolio-primary/20 p-3 rounded-full">
+                  <Phone className="text-portfolio-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-white">Phone</h3>
+                  <a href="tel:+1234567890" className="text-portfolio-accent hover:underline">+1 (234) 567-890</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-10">
+              <h3 className="text-lg font-medium text-white mb-4">Connect With Me</h3>
+              <div className="flex space-x-4">
+                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                  <Github className="text-white" size={20} />
+                </a>
+                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                  <Linkedin className="text-white" size={20} />
+                </a>
+                <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
+                  <Twitter className="text-white" size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-white mb-2">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
+                  placeholder="Your Name"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-white mb-2">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
+                  placeholder="Your Email"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-white mb-2">Message</label>
+                <textarea 
+                  id="message" 
+                  rows={5}
+                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-portfolio-primary"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              
+              <button 
+                type="submit"
+                className="px-6 py-3 bg-portfolio-primary text-white font-medium rounded-lg hover:bg-portfolio-primary/90 transition-colors duration-300 w-full md:w-auto"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
