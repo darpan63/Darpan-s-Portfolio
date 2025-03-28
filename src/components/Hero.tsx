@@ -1,89 +1,49 @@
 
-import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative">
-      <div className="absolute inset-0 bg-portfolio-dark z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/10 to-transparent"></div>
+    <section id="home" className="relative h-screen flex items-center justify-center bg-portfolio-dark overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-[10%] left-[15%] w-[300px] h-[300px] rounded-full bg-portfolio-primary/20 blur-[100px]"></div>
+        <div className="absolute bottom-[15%] right-[10%] w-[250px] h-[250px] rounded-full bg-portfolio-accent/20 blur-[100px]"></div>
       </div>
       
-      <div className="section-container relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-white">Hello, I'm </span>
-            <span className="text-portfolio-primary">Darpan Sakhala</span>
-          </h1>
-          
-          <h2 className="text-xl md:text-2xl text-white/80 mb-8">
-            Software Developer & Data Engineer
-          </h2>
-          
-          <p className="text-white/70 max-w-2xl mb-10 text-lg">
-            Specializing in full-stack development with expertise in React, Node.js, Python, and data engineering solutions.
-            Building innovative applications with a focus on performance and user experience.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <a href="mailto:darpansakhala11@gmail.com" aria-label="Email">
-              <Button variant="outline" className="flex items-center gap-2 border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white">
-                <Mail size={18} />
-                Contact Me
-              </Button>
-            </a>
-            
-            <a href="#projects" aria-label="View Projects">
-              <Button className="flex items-center gap-2 bg-portfolio-primary text-white hover:bg-portfolio-primary/90">
-                View My Work
-              </Button>
-            </a>
-          </div>
-          
-          <div className="flex space-x-6 mb-12">
-            <a 
-              href="https://github.com/Darpan-Sakhala" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-              aria-label="GitHub"
-            >
-              <Github size={24} />
-            </a>
-            <a 
-              href="https://linkedin.com/in/Darpan-Sakhala" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a 
-              href="mailto:darpansakhala11@gmail.com"
-              className="text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-              aria-label="Email"
-            >
-              <Mail size={24} />
-            </a>
-            <a 
-              href="tel:+19303332490"
-              className="text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-              aria-label="Phone"
-            >
-              <Phone size={24} />
-            </a>
-          </div>
-          
+      <div className="container mx-auto px-4 text-center z-10">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+          <span className="text-white">Hi, I'm </span>
+          <span className="text-portfolio-primary">Your Name</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl text-white/80 mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          Web Developer & Designer
+        </h2>
+        <p className="text-lg max-w-2xl mx-auto text-white/70 mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          I create beautiful, functional websites and applications that deliver exceptional user experiences.
+        </p>
+        <div className="flex justify-center space-x-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <a 
-            href="#about" 
-            className="flex items-center justify-center animate-bounce w-10 h-10 rounded-full bg-white/5 hover:bg-portfolio-primary/20 transition-colors duration-300"
-            aria-label="Scroll Down"
+            href="#projects" 
+            className="px-6 py-3 bg-portfolio-primary text-white font-medium rounded-full hover:bg-portfolio-primary/90 transition-colors duration-300"
           >
-            <ArrowDown className="text-white" size={20} />
+            View My Work
+          </a>
+          <a 
+            href="#contact" 
+            className="px-6 py-3 border border-white/20 text-white font-medium rounded-full hover:border-white/40 transition-colors duration-300"
+          >
+            Contact Me
           </a>
         </div>
       </div>
+      
+      <a 
+        href="#about" 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white/60 hover:text-white animate-bounce transition-colors"
+      >
+        <span className="mb-2 text-sm">Scroll Down</span>
+        <ArrowDown size={20} />
+      </a>
     </section>
   );
 };

@@ -1,100 +1,85 @@
 
-import { Github, ExternalLink, Code } from "lucide-react";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Harmonify",
-      description: "A music-centric social platform with real-time track sharing that lifted engagement by 40% and improved performance by 30% through optimized React components and backend APIs.",
-      tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      image: "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      github: "https://github.com/Darpan-Sakhala/harmonify",
-      demo: "https://harmonify-demo.vercel.app"
+      title: "E-Commerce Website",
+      description: "A fully responsive e-commerce platform with user authentication, product filtering, and payment integration.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      skills: ["React", "Node.js", "MongoDB", "Stripe"],
+      liveUrl: "#",
+      githubUrl: "#"
     },
     {
       id: 2,
-      title: "Epileptic Seizure Detection using CNN",
-      description: "Implemented a CNN-driven method for epileptic seizure identification achieving over 90% accuracy, further enhanced by LSTM layers and thorough data visualization for critical clinical insights.",
-      tech: ["Python", "CNN", "TensorFlow", "Keras", "LSTM", "Pandas", "NumPy", "Matplotlib"],
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      github: "https://github.com/Darpan-Sakhala/epileptic-seizure-detection",
-      demo: ""
+      title: "Portfolio Website",
+      description: "A sleek portfolio website showcasing creative work with smooth animations and responsive design.",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
+      skills: ["HTML/CSS", "JavaScript", "GSAP"],
+      liveUrl: "#",
+      githubUrl: "#"
     },
     {
       id: 3,
-      title: "NYC School Bus Delays Analysis",
-      description: "Engineered an ETL pipeline for 600K+ NYC school bus delay records using Python and Airflow, storing raw data in AWS S3, transforming it in PostgreSQL, and delivering insights via optimized Power BI dashboards all while reducing processing time by 45%.",
-      tech: ["SQL", "Python", "Airflow", "AWS S3", "PostgreSQL", "Power BI", "Excel"],
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      github: "https://github.com/Darpan-Sakhala/nyc-bus-delays",
-      demo: ""
+      title: "Task Management App",
+      description: "A collaborative task management application with real-time updates and team collaboration features.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      skills: ["React", "Firebase", "Redux", "Tailwind CSS"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 4,
+      title: "Weather Dashboard",
+      description: "A weather application providing real-time forecasts, historical data, and location-based weather alerts.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+      skills: ["JavaScript", "Weather API", "Chart.js"],
+      liveUrl: "#",
+      githubUrl: "#"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-portfolio-dark/90">
+    <section id="projects" className="bg-gradient-to-b from-portfolio-dark to-portfolio-dark/95 py-20">
       <div className="section-container">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title">My Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="project-card bg-white/5 text-white border-portfolio-primary/20">
-              <div className="h-48 overflow-hidden">
+            <div key={project.id} className="project-card group">
+              <div className="relative overflow-hidden h-48 sm:h-64">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-portfolio-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  <a href={project.liveUrl} className="p-2 bg-white rounded-full" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={20} className="text-portfolio-dark" />
+                  </a>
+                  <a href={project.githubUrl} className="p-2 bg-white rounded-full" target="_blank" rel="noopener noreferrer">
+                    <Github size={20} className="text-portfolio-dark" />
+                  </a>
+                </div>
               </div>
-              
-              <CardHeader>
-                <CardTitle className="text-portfolio-primary">{project.title}</CardTitle>
-                <div className="flex flex-wrap mt-2">
-                  {project.tech.slice(0, 3).map((tech, index) => (
-                    <span key={index} className="text-xs bg-portfolio-primary/20 text-white px-2 py-1 rounded mr-2 mb-2">
-                      {tech}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-portfolio-primary transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-white/70 mb-4">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap">
+                  {project.skills.map((skill) => (
+                    <span key={skill} className="skill-badge">
+                      {skill}
                     </span>
                   ))}
-                  {project.tech.length > 3 && (
-                    <span className="text-xs bg-portfolio-primary/20 text-white px-2 py-1 rounded mr-2 mb-2">
-                      +{project.tech.length - 3}
-                    </span>
-                  )}
                 </div>
-              </CardHeader>
-              
-              <CardContent>
-                <CardDescription className="text-white/70">
-                  {project.description}
-                </CardDescription>
-              </CardContent>
-              
-              <CardFooter className="flex justify-between">
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-                >
-                  <Github size={18} className="mr-1" />
-                  <span>Code</span>
-                </a>
-                
-                {project.demo && (
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center text-white/70 hover:text-portfolio-primary transition-colors duration-300"
-                  >
-                    <ExternalLink size={18} className="mr-1" />
-                    <span>Demo</span>
-                  </a>
-                )}
-              </CardFooter>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
