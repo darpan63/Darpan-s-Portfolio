@@ -6,7 +6,6 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Resume from "@/components/Resume";
-import Gallery from "@/components/Gallery";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -22,7 +21,6 @@ const Index = () => {
       <About />
       <Projects />
       <Resume />
-      <Gallery />
       <Contact />
       <Footer />
     </div>
