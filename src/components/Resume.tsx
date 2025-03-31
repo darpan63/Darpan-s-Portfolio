@@ -24,11 +24,17 @@ const Resume = () => {
           </p>
           
           <Button 
+            asChild
             className="bg-portfolio-accent hover:bg-portfolio-accent/80 text-white flex items-center gap-2"
-            onClick={() => window.open("/darpan_sakhala_resume.pdf", "_blank")}
           >
-            <Download size={20} />
-            Download Resume
+            <a 
+              href="https://drive.google.com/uc?export=download&id=1AaeRxHMa77MRUaDkXS2r9dVaWmKBdVcP" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Download size={20} />
+              Download Resume
+            </a>
           </Button>
         </div>
       </div>
