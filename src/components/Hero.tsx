@@ -1,21 +1,22 @@
+
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center bg-portfolio-dark overflow-hidden"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[10%] left-[15%] w-[300px] h-[300px] rounded-full bg-portfolio-primary/20 blur-[100px]"></div>
-        <div className="absolute bottom-[15%] right-[10%] w-[250px] h-[250px] rounded-full bg-portfolio-accent/20 blur-[100px]"></div>
+        <div className="absolute top-[10%] left-[15%] w-[300px] h-[300px] rounded-full bg-portfolio-bright-orange/30 blur-[100px]"></div>
+        <div className="absolute bottom-[15%] right-[10%] w-[250px] h-[250px] rounded-full bg-portfolio-bright-pink/30 blur-[100px]"></div>
       </div>
 
       <div className="container mx-auto px-4 text-center z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
           <span className="text-white">Hi, I'm </span>
-          <span className="text-portfolio-primary">Darpan Sakhala</span>
+          <span className="text-portfolio-accent">Darpan Sakhala</span>
         </h1>
         <h2
           className="text-2xl md:text-3xl text-white/80 mb-6 animate-fade-in"
@@ -36,7 +37,7 @@ const Hero = () => {
         >
           <a
             href="#projects"
-            className="px-6 py-3 bg-portfolio-primary text-white font-medium rounded-full hover:bg-portfolio-primary/90 transition-colors duration-300"
+            className="px-6 py-3 bg-portfolio-accent text-white font-medium rounded-full hover:bg-portfolio-accent/90 transition-colors duration-300"
           >
             View My Work
           </a>

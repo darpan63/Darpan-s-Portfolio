@@ -5,6 +5,8 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Resume from "@/components/Resume";
+import Gallery from "@/components/Gallery";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -14,11 +16,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-portfolio-dark text-white">
+    <div className="min-h-screen text-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
       <Projects />
+      <Resume />
+      <Gallery />
       <Contact />
       <Footer />
     </div>

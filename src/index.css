@@ -41,7 +41,7 @@
   }
 
   body {
-    @apply bg-portfolio-dark text-white;
+    @apply bg-gradient-to-br from-portfolio-bright-blue to-portfolio-bright-purple text-white;
     scroll-behavior: smooth;
   }
 
@@ -61,11 +61,11 @@
   
   .section-title:after {
     content: "";
-    @apply block w-1/2 h-1 bg-portfolio-primary mt-2;
+    @apply block w-1/2 h-1 bg-portfolio-accent mt-2;
   }
 
   .skill-badge {
-    @apply inline-block px-3 py-1 rounded-full bg-portfolio-secondary/20 text-white text-sm mr-2 mb-2;
+    @apply inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mr-2 mb-2;
   }
 
   .nav-link {
@@ -73,10 +73,22 @@
   }
 
   .nav-link.active {
-    @apply text-portfolio-primary;
+    @apply text-portfolio-accent;
   }
 
   .project-card {
-    @apply bg-white/5 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-portfolio-primary/20 hover:-translate-y-1;
+    @apply bg-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-portfolio-accent/20 hover:-translate-y-1;
+  }
+
+  .gallery-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4;
+  }
+  
+  .gallery-item {
+    @apply rounded-lg overflow-hidden aspect-square relative hover:shadow-xl transition-all duration-300;
+  }
+  
+  .resume-card {
+    @apply bg-white/10 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:shadow-portfolio-accent/20 transition-all duration-300;
   }
 }
