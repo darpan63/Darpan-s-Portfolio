@@ -1,8 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color: #e5ffff;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -41,7 +43,7 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-portfolio-bright-orange to-portfolio-bright-pink text-white;
+    /* @apply bg-gradient-to-br from-portfolio-bright-orange to-portfolio-bright-pink text-white; */
     scroll-behavior: smooth;
   }
 
@@ -54,11 +56,11 @@
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
   }
-  
+
   .section-title {
     @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
   }
-  
+
   .section-title:after {
     content: "";
     @apply block w-1/2 h-1 bg-portfolio-accent mt-2;
@@ -83,11 +85,11 @@
   .gallery-grid {
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4;
   }
-  
+
   .gallery-item {
     @apply rounded-lg overflow-hidden aspect-square relative hover:shadow-xl transition-all duration-300;
   }
-  
+
   .resume-card {
     @apply bg-white/10 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:shadow-portfolio-accent/20 transition-all duration-300;
   }
