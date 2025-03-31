@@ -1,6 +1,5 @@
-
 import { ArrowDown } from "lucide-react";
-
+import "../styles/Hero.css";
 const Hero = () => {
   return (
     <section
@@ -16,18 +15,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-white/20 shadow-xl">
-            <img 
-              src="https://drive.google.com/uc?export=view&id=1jg3IAh4iTMN33cuxZQO_pDoGHkX4_E_L" 
-              alt="Darpan Sakhala" 
+            <img
+              src="https://drive.google.com/uc?export=view&id=1jg3IAh4iTMN33cuxZQO_pDoGHkX4_E_L"
+              alt="Darpan Sakhala"
               className="object-cover w-full h-full"
             />
           </div>
         </div>
-        
+
         <div className="w-full md:w-2/3 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
             <span className="text-white">Hi, I'm </span>
-            <span className="text-portfolio-accent">Darpan Sakhala</span>
+            <span className="text-portfolio-accent" id="title-name">
+              Darpan Sakhala
+            </span>
           </h1>
           <h2
             className="text-2xl md:text-3xl text-white/80 mb-6 animate-fade-in"
@@ -39,8 +40,10 @@ const Hero = () => {
             className="text-lg max-w-2xl mx-auto md:mx-0 text-white/70 mb-8 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            I specialize in building scalable web apps, crafting intelligent data pipelines, and engineering
-            end-to-end cloud solutions. Passionate about delivering impactful digital experiences through code and collaboration.
+            I specialize in building scalable web apps, crafting intelligent
+            data pipelines, and engineering end-to-end cloud solutions.
+            Passionate about delivering impactful digital experiences through
+            code and collaboration.
           </p>
           <div
             className="flex justify-center md:justify-start space-x-4 animate-fade-in"
