@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-white/20 shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+              src="https://drive.google.com/uc?export=view&id=1jg3IAh4iTMN33cuxZQO_pDoGHkX4_E_L" 
               alt="Darpan Sakhala" 
               className="object-cover w-full h-full"
             />
