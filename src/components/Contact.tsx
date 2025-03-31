@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Github, Linkedin, Code } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -70,7 +70,7 @@ const Contact = () => {
                   <Linkedin className="text-white" size={20} />
                 </a>
                 <a href="https://leetcode.com/u/darpan63/" className="bg-white/10 p-3 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300">
-                  <LeetCode className="text-white" size={20} />
+                  <Code className="text-white" size={20} />
                 </a>
               </div>
             </div>
