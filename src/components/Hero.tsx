@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import "../styles/Hero.css";
+import darpan from "../assets/darpan_profile.jpg";
 const Hero = () => {
   return (
     <section
@@ -16,7 +17,7 @@ const Hero = () => {
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-white/20 shadow-xl">
             <img
-              src="https://drive.google.com/uc?export=view&id=1jg3IAh4iTMN33cuxZQO_pDoGHkX4_E_L"
+              src={darpan}
               alt="Darpan Sakhala"
               className="object-cover w-full h-full"
             />
@@ -50,6 +51,14 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-portfolio-accent text-white font-medium rounded-full hover:bg-portfolio-accent/90 transition-colors duration-300"
+            >
+              Resume
+            </a>
+            <a
               href="#projects"
               className="px-6 py-3 bg-portfolio-accent text-white font-medium rounded-full hover:bg-portfolio-accent/90 transition-colors duration-300"
             >
@@ -57,7 +66,7 @@ const Hero = () => {
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 border border-white/20 text-white font-medium rounded-full hover:border-white/40 transition-colors duration-300"
+              className="px-6 py-3 bg-portfolio-accent text-white font-medium rounded-full hover:bg-portfolio-accent/90 transition-colors duration-300"
             >
               Contact Me
             </a>

@@ -1,28 +1,43 @@
-
-import { ArrowUp } from "lucide-react";
-
+import React from "react";
+import "../styles/Footer.css";
+import { FiGithub } from "react-icons/fi";
+import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import footerVect from "../assets/vect_asset_1.png";
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      icon: <IoLogoLinkedin size={50} />,
+      href: "https://www.linkedin.com/in/darpansakhala/",
+    },
+    {
+      name: "GitHub",
+      icon: <FiGithub size={50} />,
+      href: "https://github.com/darpan63",
+    },
+    {
+      name: "Email",
+      icon: <IoMdMail size={50} />,
+      href: "mailto:darpansakhala11@gmail.com",
+    },
+  ];
+
   return (
-    <footer className="bg-portfolio-dark border-t border-white/10 py-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/70 mb-4 md:mb-0">
-            &copy; {currentYear} Your Name. All rights reserved.
-          </p>
-          
-          <div className="flex items-center space-x-4">
-            <a 
-              href="#home"
-              className="bg-white/5 p-2 rounded-full hover:bg-portfolio-primary/20 transition-colors duration-300"
-            >
-              <ArrowUp className="text-white" size={20} />
+    <section className="contact-section" id="contact">
+      <div className="contact-section-container">
+        <div className="contact-links">
+          {socialLinks.map((link) => (
+            <a href={link.href} target="_blank" rel="noreferrer">
+              <div className="social-link-card">
+                {link.icon}
+                <p>{link.name}</p>
+              </div>
             </a>
-          </div>
+          ))}
         </div>
       </div>
-    </footer>
+      <img src={footerVect} className="footer-vect" />
+    </section>
   );
 };
 
