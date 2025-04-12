@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         "Crafted an AI-powered chatbot leveraging Python, TensorFlow and OpenAI GPT-3 alongside spaCy for NLP, with a Flask backendand React.js interface, increasing engagement by 40% and learning retention by 30%.",
       image:
-        "https://dribbble.com/shots/21053716-AI-Chatbot-Mobile-App-UI",
+        "https://cdn.dribbble.com/userupload/5846089/file/original-767b44564fcbd68d6fb1cc13ede505e8.png?resize=752x&vertical=center",
       skills: ["|Python", "TensorFlow", "OpenAI", "NLP", "Flask","React.js"],
       liveUrl: "https://github.com/darpan63",
       githubUrl: "https://github.com/darpan63",
@@ -20,7 +20,7 @@ const Projects = () => {
       description:
         "A music-centric social platform with real-time track sharing that improved engagement by 40% and enhanced performance by 30% through optimized React components and backend APIs.",
       image:
-        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e9f7c198733857.659f6b2c4c7d1.jpg",
+        "https://www.behance.net/gallery/198733857/Harmonify-Music-App/modules/1125951489",
       skills: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
       liveUrl: "https://github.com/darpan63",
       githubUrl: "https://github.com/darpan63",
@@ -42,7 +42,7 @@ const Projects = () => {
       description:
         "Engineered an ETL pipeline for 600K+ NYC school bus delay records using Python and Airflow, storing raw data in AWS S3, transforming it in PostgreSQL, and delivering insights via Power BI dashboards.",
       image:
-        "https://images.unsplash.com/photo-1580508174046-170816f65662?auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/14044466/pexels-photo-14044466.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=750&w=1260",
       skills: ["SQL", "Python", "Airflow", "AWS S3", "PostgreSQL", "Power BI"],
       liveUrl: "https://github.com/darpan63",
       githubUrl: "https://github.com/darpan63",
