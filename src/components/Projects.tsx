@@ -20,7 +20,7 @@ const Projects = () => {
       description:
         "A music-centric social platform with real-time track sharing that improved engagement by 40% and enhanced performance by 30% through optimized React components and backend APIs.",
       image:
-        "https://www.behance.net/gallery/198733857/Harmonify-Music-App/modules/1125951489",
+        "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/c82a40394c80c64254ded9e9b66fdc4290f811a1",
       skills: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
       liveUrl: "https://github.com/darpan63",
       githubUrl: "https://github.com/darpan63",
