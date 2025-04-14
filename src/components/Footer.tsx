@@ -8,7 +8,7 @@ const Footer = () => {
     {
       name: "LinkedIn",
       icon: <IoLogoLinkedin size={50} />,
-      href: "https://www.linkedin.com/in/darpansakhala/",
+      href: "https://www.linkedin.com/in/darpansakhala9/",
     },
     {
       name: "GitHub",

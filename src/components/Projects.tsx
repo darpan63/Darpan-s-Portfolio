@@ -10,7 +10,18 @@ const Projects = () => {
         "Crafted an AI-powered chatbot leveraging Python, TensorFlow and OpenAI GPT-3 alongside spaCy for NLP, with a Flask backendand React.js interface, increasing engagement by 40% and learning retention by 30%.",
       image:
         "https://cdn.dribbble.com/userupload/5846089/file/original-767b44564fcbd68d6fb1cc13ede505e8.png?resize=752x&vertical=center",
-      skills: ["|Python", "TensorFlow", "OpenAI", "NLP", "Flask","React.js"],
+      skills: ["Python", "TensorFlow", "OpenAI", "NLP", "Flask","React.js"],
+      liveUrl: "https://github.com/darpan63",
+      githubUrl: "https://github.com/darpan63",
+    },
+    {
+      id: 2,
+      title: "SmartPayAPP",
+      description:
+        "A full-stack digital wallet and money transfer platform enabling users to add funds, make instant payments, and receive real-time transaction feedback—boosting transaction speed by 40% and cutting API response time by 35%.",
+      image:
+        "https://fireart.studio/wp-content/uploads/2022/08/banking.jpg",
+      skills: ["Next.js", "Express.js", "PostgreSQL", "Tailwind CSS", "TypeScript"],
       liveUrl: "https://github.com/darpan63",
       githubUrl: "https://github.com/darpan63",
     },
