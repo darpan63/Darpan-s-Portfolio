@@ -41,7 +41,7 @@ const Hero = () => {
             className="text-lg max-w-2xl mx-auto md:mx-0 text-white/70 mb-8 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            I specialize in building scalable web apps (Angular, React, Node.js), intelligent data pipelines (Python, Django, Hadoop), cloud-native solutions (AWS, GCP), and backend systems using microservices(Java, Spring Boot) and RESTful APIs.
+            With 2 years of hands-on experience, I specialize in building scalable web apps (Angular, React, Node.js), intelligent data pipelines (Python, Django, Hadoop), cloud-native solutions (AWS, GCP), and backend systems using microservices(Java, Spring Boot) and RESTful APIs.
           </p>
           <div
             className="flex justify-center md:justify-start space-x-4 animate-fade-in"
