@@ -138,21 +138,10 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-lg text-white/80 mb-6">
-              I'm a Computer Science graduate student at Indiana University with
-              a strong foundation in software engineering and hands-on
-              experience in full stack development, cloud infrastructure, and
-              data-driven solutions. My professional journey includes roles as a
-              Software Developer at Indiana University, Data Engineer Research
-              Assistant, and internships focused on web development and MERN
-              stack applications.
+            I'm a Computer Science graduate student at Indiana University Bloomington (Aug 2023 – May 2025), with a strong foundation in software engineering and hands-on experience in full stack development, cloud infrastructure, and data engineering. My professional journey includes roles as a Software Engineer at Indiana University, a Data Engineer Research Assistant, and internships focused on performance optimization and scalable web systems.
             </p>
             <p className="text-lg text-white/80 mb-8">
-              My experience spans diverse environments from research and
-              startups to enterprise systems. Whether I'm developing RESTful
-              APIs with Java and Spring Boot, creating data pipelines with
-              Python and Django, or building responsive web applications with
-              React, I thrive on delivering high-performance digital experiences
-              that solve real-world problems.
+            I specialize in building scalable web applications (React, Node.js), intelligent data pipelines (Python, Django, Hadoop), and cloud-native solutions (AWS, GCP). I’ve designed microservices using Go, Java, and Spring Boot, and developed RESTful APIs and serverless workflows using AWS Lambda. My work spans research labs, startups, and enterprise systems—always focused on delivering robust, high-performance digital solutions.
             </p>
 
             <div className="mb-8">
