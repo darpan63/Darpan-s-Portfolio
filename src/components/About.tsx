@@ -71,10 +71,21 @@ const About = () => {
 
   const experience = [
     {
-      position: "Software Developer",
-      company: "Indiana University Bloomington",
+      position: "Software Engineer",
+      company: "Indiana University - Office of Enrollment",
       location: "Indiana, United States",
-      period: "July 2024 - Present",
+      period: "June 2025 - Present",
+      technologies: "Go, Java, Python, AWS Lambda, Jenkins, REST APIs ",
+      achievements: [
+        "Designing and developing student and notification microservices in Go and Java, building RESTful APIs and integrating AWS Lambda to reduce API latency by 35%.",
+        "Implementing Python ETL pipelines to sync student data across systems, ensuring integrity and increasing processing efficiency by 50%, managing CI/CD pipelines using Jenkins, enabling 40% faster production rollouts.",
+      ],
+    },
+    {
+      position: "Software Engineer Intern ",
+      company: "Indiana University - Office of Enrollment",
+      location: "Indiana, United States",
+      period: "July 2024 - May 2025",
       technologies: "Java, Spring Boot, AWS Lambda, RESTful APIs, Docker, Git",
       achievements: [
         "Revamped Salesforce CRM-based applications by creating RESTful APIs with Java (Spring Boot) and JSON, decreasing data exchange latency by 25% and boosting user adoption by 30% through more efficient recruitment workflows.",
@@ -86,8 +97,8 @@ const About = () => {
       position: "Data Engineer Research Assistant",
       company: "Indiana University Bloomington",
       location: "Indiana, United States",
-      period: "December 2024 - Present",
-      technologies: "Python, Django, Tableau, MySQL",
+      period: "December 2024 - May 2025",
+      technologies: "Python, Django, MySQL, Hadoop, Tableau ",
       achievements: [
         "Designed scalable data ingestion pipelines in Python (with Django) to automate MySQL ETL processes for large-scale data scraping, accelerating throughput by 40% and supporting advanced NLP use cases for policy engagement.",
         "Created interactive dashboards in Tableau to visualize multi-layer sentiment analysis, enabling stakeholders to identify trending insights with 92% classification accuracy and reducing manual classification tasks by 35%.",
@@ -98,7 +109,7 @@ const About = () => {
       company: "Hyphenova",
       location: "California, United States",
       period: "May 2024 - July 2024",
-      technologies: "C++, MERN Stack, Kubernetes, Django",
+      technologies: "C++, Kafka, Redis, Jenkins, Git ",
       achievements: [
         "Developed new features for the influencer–brand matching engine using Django, PostgreSQL, C++, and Kubernetes, elevating user engagement by 25% and supporting high-traffic, event-driven workflows.",
         "Conceived and deployed personalized recommendations in a MERN environment (MongoDB, Express, React, Node.js), enhancing backend throughput by 30%.",
@@ -110,7 +121,7 @@ const About = () => {
       company: "RunwalSoft",
       location: "Maharashtra, India",
       period: "May 2022 - December 2023",
-      technologies: "HTML, CSS, JavaScript, React, MySQL",
+      technologies: "Angular, React, Node.js, MongoDB, TypeScript ",
       achievements: [
         "Created web-based applications using HTML, CSS, and JavaScript with React, enabling cross-functional teams to collaborate more effectively and raising productivity by 20%.",
         "Deployed a fully featured e-commerce platform for the Australian market using React, Node.js, and MySQL, boosting revenue by 15% and expanding the client's market presence.",
