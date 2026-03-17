@@ -35,13 +35,16 @@ const Hero = () => {
             className="text-2xl md:text-3xl text-white/80 mb-6 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            Full Stack Developer | Software Engineer | Data Engineer
+            Software Engineer · AI/ML · Quantitative Finance
           </h2>
           <p
             className="text-lg max-w-2xl mx-auto md:mx-0 text-white/70 mb-8 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            With over 1.5 years of hands-on experience, I specialize in building scalable web apps (Angular, React, Node.js), intelligent data pipelines (Python, Django, Hadoop), cloud-native solutions (AWS, GCP), and backend systems using microservices(Java, Spring Boot) and RESTful APIs.
+            Software Engineer Analyst at VWH Capital Management ($4B+ AUM), specializing in
+            agentic LLM workflows, distributed data pipelines, and full-stack
+            cloud solutions. Passionate about building high-impact systems at the
+            intersection of AI and software engineering.
           </p>
           <div
             className="flex justify-center md:justify-start space-x-4 animate-fade-in"

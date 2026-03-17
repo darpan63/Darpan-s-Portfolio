@@ -5,71 +5,70 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "ChronoTalk: AI History Chatbot",
+      title: "QuantVision – AI Financial Forecasting & Fraud Detection",
       description:
-        "Crafted an AI-powered chatbot leveraging Python, TensorFlow and OpenAI GPT-3 alongside spaCy for NLP, with a Flask backendand React.js interface, increasing engagement by 40% and learning retention by 30%.",
+        "Real-time forecasting platform combining ARIMA time-series models with FinBERT sentiment analysis on live news streams (10K+ data points/day), achieving 78% anomaly-detection precision on a held-out test set.",
       image:
-        "https://cdn.dribbble.com/userupload/5846089/file/original-767b44564fcbd68d6fb1cc13ede505e8.png?resize=752x&vertical=center",
-      skills: ["Python", "TensorFlow", "OpenAI", "NLP", "Flask","React.js"],
-      liveUrl: "https://github.com/darpan63",
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+      skills: ["Python", "Scikit-learn", "FinBERT", "Pandas", "Apache Kafka", "ARIMA"],
+      liveUrl: "#",
       githubUrl: "https://github.com/darpan63",
     },
     {
       id: 2,
-      title: "SmartPayAPP",
+      title: "ChronoTalk – Agentic AI History Chatbot",
       description:
-        "A full-stack digital wallet and money transfer platform enabling users to add funds, make instant payments, and receive real-time transaction feedback—boosting transaction speed by 40% and cutting API response time by 35%.",
+        "RAG-powered chatbot using LangChain + GPT-3 with spaCy NER for entity-aware retrieval, reducing query-response latency by 40% vs. naive retrieval, deployed on a FastAPI + React.js stack.",
       image:
-        "https://fireart.studio/wp-content/uploads/2022/08/banking.jpg",
-      skills: ["Next.js", "Express.js", "PostgreSQL", "Tailwind CSS", "TypeScript"],
-      liveUrl: "https://github.com/darpan63",
-      githubUrl: "https://github.com/darpan63",
-    },
-    {
-      id: 2,
-      title: "Harmonify",
-      description:
-        "A music-centric social platform with real-time track sharing that improved engagement by 40% and enhanced performance by 30% through optimized React components and backend APIs.",
-      image:
-        "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/c82a40394c80c64254ded9e9b66fdc4290f811a1",
-      skills: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
-      liveUrl: "https://github.com/darpan63",
+        "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80",
+      skills: ["Python", "FastAPI", "React.js", "LangChain", "GPT-3", "spaCy", "RAG"],
+      liveUrl: "#",
       githubUrl: "https://github.com/darpan63",
     },
     {
       id: 3,
-      title: "Epileptic Seizure Detection",
+      title: "Epileptic Seizure Detection – CNN-LSTM Classifier",
       description:
-        "Implemented a CNN-driven method for epileptic seizure identification achieving over 90% accuracy, enhanced by LSTM layers and thorough data visualization for critical clinical insights.",
+        "CNN-LSTM hybrid model on 11,500 EEG samples achieving 91.3% classification accuracy — an 18% false-negative reduction vs. a baseline SVM, with thorough data visualization for clinical insights.",
       image:
-        "https://www.frontiersin.org/files/Articles/578126/fnins-14-578126-HTML/image_m/fnins-14-578126-g001.jpg",
-      skills: ["Python", "CNN", "TensorFlow", "Keras", "LSTM", "Matplotlib"],
-      liveUrl: "https://github.com/darpan63",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      skills: ["Python", "TensorFlow", "Keras", "LSTM", "CNN", "NumPy", "Matplotlib"],
+      liveUrl: "#",
       githubUrl: "https://github.com/darpan63",
     },
     {
       id: 4,
-      title: "NYC School Bus Delays Analysis",
+      title: "SmartPayAPP – Digital Wallet & Payments",
       description:
-        "Engineered an ETL pipeline for 600K+ NYC school bus delay records using Python and Airflow, storing raw data in AWS S3, transforming it in PostgreSQL, and delivering insights via Power BI dashboards.",
+        "Full-stack digital wallet and money transfer platform enabling users to add funds, make instant payments, and receive real-time transaction feedback — boosting transaction speed by 40% and cutting API response time by 35%.",
       image:
-        "https://images.pexels.com/photos/14044466/pexels-photo-14044466.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=750&w=1260",
-      skills: ["SQL", "Python", "Airflow", "AWS S3", "PostgreSQL", "Power BI"],
-      liveUrl: "https://github.com/darpan63",
+        "https://images.unsplash.com/photo-1639149888905-5c09c3e1cd75?auto=format&fit=crop&w=800&q=80",
+      skills: ["Next.js", "Express.js", "PostgreSQL", "Tailwind CSS", "TypeScript"],
+      liveUrl: "#",
       githubUrl: "https://github.com/darpan63",
     },
     {
       id: 5,
-      title: "SkyReserve",
+      title: "NYC School Bus Delays Analysis",
       description:
-        "A responsive flight booking platform that streamlines user interactions with Ant Design components and Tailwind-powered UI, improving booking efficiency by 35%. Built with a robust TypeScript backend using Node.js and Express for seamless data handling and API performance.",
+        "ETL pipeline for 600K+ NYC school bus delay records using Python and Airflow, storing raw data in AWS S3, transforming it in PostgreSQL, and delivering insights via Power BI dashboards.",
       image:
-        "https://cdn.dribbble.com/userupload/34958259/file/original-cd389f319f8906df8f3190df4b76b13f.png?resize=752x&vertical=center",
-      skills: ["React", "Tailwind CSS", "Ant Design", "Node.js", "Express", "TypeScript"],
-      liveUrl: "https://github.com/darpan63",
+        "https://images.unsplash.com/photo-1580508174046-170816f65662?auto=format&fit=crop&w=800&q=80",
+      skills: ["SQL", "Python", "Airflow", "AWS S3", "PostgreSQL", "Power BI"],
+      liveUrl: "#",
       githubUrl: "https://github.com/darpan63",
-    }
-
+    },
+    {
+      id: 6,
+      title: "Harmonify – Music Social Platform",
+      description:
+        "Music-centric social platform with real-time track sharing that improved engagement by 40% and enhanced performance by 30% through optimized React components and backend APIs.",
+      image:
+        "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+      skills: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/darpan63",
+    },
   ];
 
   return (
@@ -80,7 +79,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="project-card group">
-              <div className="relative overflow-hidden h-48 sm:h-64">
+              <div className="relative overflow-hidden h-48 sm:h-56">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -106,11 +105,11 @@ const Projects = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-white">
+                <h3 className="text-lg font-semibold mb-2 text-white leading-snug">
                   {project.title}
                 </h3>
-                <p className="text-white/70 mb-4">{project.description}</p>
-                <div className="flex flex-wrap">
+                <p className="text-white/70 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <div className="flex flex-wrap gap-1">
                   {project.skills.map((skill) => (
                     <span key={skill} className="skill-badge">
                       {skill}
