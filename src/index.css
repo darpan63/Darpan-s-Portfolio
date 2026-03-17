@@ -2,40 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
-  color: #e5ffff;
+  color: #e2e8f0;
+  --glow-indigo: 0 0 40px rgba(129, 140, 248, 0.25);
+  --glow-cyan: 0 0 40px rgba(34, 211, 238, 0.2);
 }
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 239 84% 73%;
+    --primary-foreground: 222 47% 5%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 189 94% 53%;
+    --accent-foreground: 222 47% 5%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 239 84% 73%;
+    --radius: 0.75rem;
   }
 
   * {
@@ -43,12 +39,33 @@
   }
 
   body {
-    /* @apply bg-gradient-to-br from-portfolio-bright-orange to-portfolio-bright-pink text-white; */
+    background-color: #080d18;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080d18;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #818cf8;
   }
 }
 
@@ -58,28 +75,111 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+    @apply text-3xl md:text-5xl font-bold mb-12 relative inline-block;
+    background: linear-gradient(135deg, #ffffff 0%, #818cf8 50%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .section-title:after {
     content: "";
-    @apply block w-1/2 h-1 bg-portfolio-accent mt-2;
+    display: block;
+    width: 60%;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #818cf8, #22d3ee);
   }
 
   .skill-badge {
-    @apply inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mr-2 mb-2;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mr-1 mb-1;
+    background: rgba(129, 140, 248, 0.1);
+    color: #a5b4fc;
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    transition: all 0.2s ease;
+  }
+
+  .skill-badge:hover {
+    background: rgba(129, 140, 248, 0.2);
+    border-color: rgba(129, 140, 248, 0.45);
+    color: #c7d2fe;
   }
 
   .nav-link {
-    @apply px-4 py-2 text-white/80 hover:text-white transition-colors duration-200;
+    @apply px-4 py-2 text-slate-400 hover:text-white transition-all duration-200 font-medium text-sm relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #818cf8, #22d3ee);
+    border-radius: 1px;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 60%;
   }
 
   .nav-link.active {
-    @apply text-portfolio-accent;
+    color: #818cf8;
   }
 
   .project-card {
-    @apply bg-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-portfolio-accent/20 hover:-translate-y-1;
+    @apply rounded-xl overflow-hidden transition-all duration-300;
+    background: rgba(15, 25, 41, 0.85);
+    border: 1px solid rgba(129, 140, 248, 0.1);
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(129, 140, 248, 0.35);
+    box-shadow: 0 20px 60px rgba(129, 140, 248, 0.12), 0 4px 20px rgba(0,0,0,0.5);
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 font-semibold rounded-full transition-all duration-300 text-sm;
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: white;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 font-semibold rounded-full transition-all duration-300 text-sm;
+    background: transparent;
+    color: #818cf8;
+    border: 1px solid rgba(129, 140, 248, 0.45);
+  }
+
+  .btn-outline:hover {
+    background: rgba(129, 140, 248, 0.1);
+    border-color: #818cf8;
+    transform: translateY(-2px);
+  }
+
+  .glass-card {
+    background: rgba(15, 25, 41, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(129, 140, 248, 0.12);
+    border-radius: 1rem;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #818cf8 0%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .gallery-grid {
@@ -91,6 +191,13 @@
   }
 
   .resume-card {
-    @apply bg-white/10 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:shadow-portfolio-accent/20 transition-all duration-300;
+    @apply rounded-xl p-6 flex flex-col items-center text-center transition-all duration-300;
+    background: rgba(15, 25, 41, 0.6);
+    border: 1px solid rgba(129, 140, 248, 0.12);
+  }
+
+  .resume-card:hover {
+    box-shadow: 0 8px 30px rgba(129, 140, 248, 0.15);
+    border-color: rgba(129, 140, 248, 0.3);
   }
 }
